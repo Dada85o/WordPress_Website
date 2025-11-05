@@ -1,5 +1,7 @@
 <head>
     <script src="<?php echo get_template_directory_uri(); ?>/script/script.js" defer></script>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style/header.css">
+
 </head>
 <header>
     <div class="wrapper">
@@ -13,8 +15,9 @@
         </div>
     </div>          
     <nav>
-        <a href="#">Home page</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
+        <a href="#Page1">Home page</a>
+        <a href="#Page2">Login</a>
+        <a href="#Page3">Register</a>
     </nav>
+
 </header>

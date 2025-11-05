@@ -11,7 +11,7 @@
     License: GNU General Public License v2 or later
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Text Domain: vlastni-sablona
-*/
+*/¨
 *{
     box-sizing: border-box;
 }
@@ -20,6 +20,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/*HEADER*/
 header {
   width: 100%;
   height: 100px;
@@ -118,4 +120,56 @@ header nav a {
 }
 header .is-open {
   transform: translateX(-50%) translateY(0px);
+}
+
+.nadpis{
+  text-decoration: underline;
+}
+
+/*Main 1page*/
+.hero{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+  background-color: rgb(255, 221, 0);
+}
+
+
+.button1{
+  a{
+    background-color: #fff000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+}
+
+  a:hover{
+    outline: 0;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.623), 0 3px 8px 0 rgba(0,0,0,.15);
+  }
+
+/*Main 2 page*/
+.timeline{
+  background-color: rgb(255, 196, 0);
 }
