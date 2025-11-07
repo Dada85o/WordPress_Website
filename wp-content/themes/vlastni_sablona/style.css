@@ -26,8 +26,11 @@ header {
   width: 100%;
   height: 100px;
   box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-  position: relative;
-  background-color: none;
+  position: fixed; /* bylo relative → změnit na fixed */
+  top: 0;
+  left: 0;
+  background-color: #fff; /* bylo none → změň na bílou nebo jinou barvu */
+  z-index: 1000;
 }
 header .wrapper {
   max-width: 1300px;
@@ -64,6 +67,8 @@ header .wrapper-hamburger span {
   transition: ease 1s;
   border: 2px solid #000;
 }
+
+
 @media only screen and (min-width: 768px) {
   header .wrapper-hamburger {
     display: none;
@@ -95,6 +100,7 @@ header nav {
   padding: 16px 0;
   box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
   transition: transform ease 1s;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 header nav a {
   font-family: Arial, Helvetica, sans-serif;
@@ -120,6 +126,7 @@ header nav a {
 }
 header .is-open {
   transform: translateX(-50%) translateY(0px);
+  background-color: rgba(255, 255, 255, 0.80);
 }
 
 .nadpis{
@@ -141,6 +148,7 @@ header .is-open {
 
 main{
   background-color: rgb(255, 221, 0);
+  margin-top: 50px;
 }
 
 
@@ -172,4 +180,28 @@ main{
 /*Main 2 page*/
 .timeline{
   background-color: rgb(255, 196, 0);
+}
+.nadpis_onas{
+  font-size: xx-large;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-style: oblique;
+  text-decoration: underline  overline dotted black;
+
+
+}
+
+.nadpis_folder{
+  font-size: larger;
+  color: #000;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif, bold;
+}
+
+.txt_folder{
+  font-size: medium;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  color: #000;
+}
+/*Main 3 page*/
+.map{
+  margin: 50px;
 }

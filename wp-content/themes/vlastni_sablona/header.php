@@ -16,8 +16,8 @@
     </div>          
     <nav>
         <a href="#Page1">Home page</a>
-        <a href="#Page2">Login</a>
-        <a href="#Page3">Register</a>
+        <a href="#Page2">O nás</a>
+        <a href="#Page3">Naše technika</a>
     </nav>
 
 </header>

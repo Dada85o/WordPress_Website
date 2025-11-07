@@ -26,3 +26,4 @@ function ControlWidth() {
 }
 
 window.addEventListener('resize', ControlWidth);
+
